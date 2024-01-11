@@ -1,5 +1,4 @@
 def options():
-    
     print("""Below are the Options to perform Basic Arithmetic Operations         
         1. Addition
         2. Multiplication
@@ -65,4 +64,4 @@ while permission=="Y":
     permission=input("To continue the calculater press Y and press N for stop:")
 if permission=="N":
     print("DONE!!")
-   
+    
