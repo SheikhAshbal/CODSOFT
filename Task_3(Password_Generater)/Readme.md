@@ -10,7 +10,7 @@ To change the password length, enter '2' and follow the prompts.
 To copy the generated password to the clipboard, enter '3'.
 To exit the program, enter '4'.
 <h2>Functions:</h2>
-generate_password(length): Generates a random password with the specified length using letters (both upper and lower case) and digits.
+generate_password(length): Generates a random password with the specified length using letters (both upper and lower case), digits, and punctuation.
 
 Password_length(): Prompts the user to enter the desired length for the password. Validates that the length is a positive integer.
 

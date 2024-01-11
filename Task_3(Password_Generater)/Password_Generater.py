@@ -5,8 +5,11 @@ def main():
     print("------------>PASSWORD GENERATOR<------------\n")
     password_generator_menu()
 def generate_password(length):
-    characters = string.ascii_letters + string.digits 
-    password = ''.join(random.choice(characters) for _ in range(length))
+    characters = string.ascii_letters + string.digits + string.punctuation
+    password=""
+    for _ in range(length):
+        password_letter=characters[random.randint(0,93)]
+        password+=password_letter   
     return password
 def Password_length():
     while True:
