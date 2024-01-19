@@ -1,6 +1,5 @@
 import json
 
-
 def add_task(tasks, status="Incomplete"):
     title = input("Enter task title: ").capitalize()
     description = input("Enter task description: ").capitalize()
