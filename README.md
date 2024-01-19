@@ -1,5 +1,5 @@
 # CodSoft Internship - Python Developer
-<h2></h2>Overview</h2>
+<h2>Overview</h2>
 Welcome to my GitHub repository showcasing the projects I worked on during my internship at CodSoft. As a Python developer, I've successfully completed the following tasks:<br>
 <h6>To-Do List Application</h6>
 <h6>Calculator</h6>
@@ -36,5 +36,5 @@ Navigate to the specific project folder you want to explore.<br>
 Follow the instructions provided in the README of each project for setup and usage.
 <h2>Author</h2>
 Ashbal Faheem Shaikh<br>
-ashbalshaikh555@gmail.com<br>
+ashbalshaikh555@gmail.com<br><br>
 Thank you for the opportunity to contribute to CodSoft as a Python developer. I'm excited to continue learning and growing as a developer.
