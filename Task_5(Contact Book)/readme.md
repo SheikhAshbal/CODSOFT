@@ -14,24 +14,24 @@ Delete contacts from the contact list.
 Add Contact:
 
 Choose option 1 to add a new contact.
-Enter the name, phone number, email, and address when prompted.
+Enter the name, phone number, email, and address when prompted.<br>
 View Contact List:
 
-Choose option 2 to display the list of contacts.
+Choose option 2 to display the list of contacts.<br>
 Search Contact:
 
 Choose option 3 to search for a contact by name.
-Enter the name to search for when prompted.
+Enter the name to search for when prompted.<br>
 Update Contact:
 
 Choose option 4 to update the details of a contact.
 Enter the serial number (S.NO) of the contact to update when prompted.
-Update the contact details as needed.
+Update the contact details as needed.<br>
 Delete Contact:
 
 Choose option 5 to delete a contact.
 Enter the serial number (S.NO) of the contact to delete when prompted.
-Confirm the deletion when prompted.
+Confirm the deletion when prompted.<br>
 Exit:
 
 Choose option 0 to exit the application.

@@ -13,21 +13,21 @@ Save and Quit
 Add Task:
 
 Choose option 1 to add a new task.
-Enter the title and description when prompted.
+Enter the title and description when prompted.<br>
 Display Tasks:
 
-Choose option 2 to display all tasks.
+Choose option 2 to display all tasks.<br>
 Mark Task as Complete:
 
 Choose option 3 to mark a task as complete.
-Enter the title of the task when prompted.
+Enter the title of the task when prompted.<br>
 Remove Completed Tasks:
 
-Choose option 4 to remove completed tasks.
+Choose option 4 to remove completed tasks.<br>
 Update Tasks:
 
 Choose option 5 to update the details of a task.
-Enter the index of the task when prompted.
+Enter the index of the task when prompted.<br>
 Save and Quit:
 
 Choose option 6 to save the tasks to a file and exit the application.
