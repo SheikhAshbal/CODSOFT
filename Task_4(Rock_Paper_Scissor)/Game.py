@@ -58,15 +58,24 @@ def main():
         print(f"\nScore---->\t{user_name}\t\tComputer: ")
         print(f"\t\t{user_score}\t\t{comp_score}")
 
-        user = input("""\nWhat do you want?Press(1/2/3)
+        while True:
+            try:
+                user = int(input("""\nWhat do you want?Press(1/2/3)
                            1.Play Again
                            2.Restart(Scores zero)
-                           3.Exit: """)
-        if user=="1":
+                           3.Exit: """))
+                if user < 1 or user > 3:
+                    print("\nPlease enter a number between 1 and 3.\n")
+                elif 1<=user<=3:
+                    break
+            except:
+                print("\nPlease enter a valid integer.")
+
+        if user==1:
             pass
-        elif user=="2":
+        elif user==2:
             user_score,comp_score=restart_game()
-        elif user == "3":
+        elif user == 3:
             print("\nThanks for playing!\n")
             break
         

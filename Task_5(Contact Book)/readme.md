@@ -1,41 +1,27 @@
-<h1>Contact Book</h1>
-<h2>Description</h2>
-This is a basic Contact Book application written in Python. Users can perform various operations such as adding contacts, viewing the contact list, searching for contacts, updating contact details, and deleting contacts. Contacts are stored in a text file using JSON for persistence.
+# Contact Book
+<h2>Introduction</h2>
+The Contact Book is a simple Python program that allows users to manage their contacts. Users can perform various operations such as adding contacts, viewing the contact list, searching for contacts, updating contact information, and deleting contacts.
 
-<h3Features</h3>
-Add contacts with details such as name, phone number, email, and address.
-View the list of contacts.
-Search for contacts by name.
-Update contact details.
-Delete contacts from the contact list.
-<h3>Files</h3>
-`contacts.txt`: Text file used to store contact details.
-<h3>Usage</h3>
-Add Contact:
+<h2>Features</h2>
+<h5>Add Contact:</h5> Add new contacts to the Contact Book by providing details such as name, phone number, email address, and address.
 
-Choose option 1 to add a new contact.
-Enter the name, phone number, email, and address when prompted.<br>
-View Contact List:
+<h5>View Contact List:</h5> Display the list of contacts with their names and phone numbers.
 
-Choose option 2 to display the list of contacts.<br>
-Search Contact:
+<h5>Search Contact:</h5> Search for a contact by entering the name. The program will display matching results.
 
-Choose option 3 to search for a contact by name.
-Enter the name to search for when prompted.<br>
-Update Contact:
+<h5>Update Contact:</h5> Modify contact details, including the name, phone number, email address, and address.
 
-Choose option 4 to update the details of a contact.
-Enter the serial number (S.NO) of the contact to update when prompted.
-Update the contact details as needed.<br>
-Delete Contact:
+<h5>Delete Contact:</h5> Remove a contact from the Contact Book. The program prompts for confirmation before deletion.
 
-Choose option 5 to delete a contact.
-Enter the serial number (S.NO) of the contact to delete when prompted.
-Confirm the deletion when prompted.<br>
-Exit:
-
-Choose option 0 to exit the application.
-<h3>How to Run</h3>
-Ensure you have Python installed on your machine.
-Clone the repository.
-Run the script using the command: `python your_script_name.py`
+<h2>Usage</h2>
+Run the program.<br>
+<h3>Choose from the available options:</h3>
+<h5>Add Contact (Option 1):</h5> Enter details to add a new contact.
+<h5>View Contact List (Option 2):</h5> Display the existing contacts.
+<h5>Search Contact (Option 3):</h5> Enter a name to search for a contact.
+<h5>Update Contact (Option 4):</h5> Update contact details by providing the Serial Number of the contact.
+<h5>Delete Contact (Option 5):</h5> Remove a contact by providing the Serial Number and confirming the deletion.
+<h5>Exit (Option 0):</h5> Terminate the program.
+<h2>Note</h2>
+Contacts are stored in a file (contacts.txt) using JSON format, ensuring data persistence between program runs.<br>
+The program includes error handling for invalid inputs and provides a user-friendly interface.

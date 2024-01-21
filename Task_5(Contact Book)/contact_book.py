@@ -64,7 +64,13 @@ def Search_contact():
 
 def Update_contact():
     View_contact_list()
-    index = int(input("Enter the S.NO: to update the contact: ")) - 1
+    while True:
+        try:
+            index = int(input("Enter the S.NO: to update the contact: ")) - 1
+            break
+        except:
+            print("\nInvalid Input! Please enter a number.")
+        
 
     if 0 <= index < len(contacts):
         contact = contacts[index]
@@ -77,7 +83,7 @@ def Update_contact():
         print("\nContact updated successfully!\n")
         print(contact)
     else:
-        print("\nInvalid contact number.\n")
+        print("\nInvalid S.NO .\n")
 
 
 def Delete_contact():
@@ -85,7 +91,7 @@ def Delete_contact():
     index = int(input("Enter the S.NO: to delete the contact: ")) - 1
 
     if 0 <= index < len(contacts):
-        permission=input(f"\nConfirm you want to delete {index} S.NO: (y/n) ").lower()
+        permission=input(f"\nConfirm you want to delete {index+1} S.NO: (y/n) ").lower()
         if permission=='y':
             del contacts[index]
             Save_contacts()
@@ -107,25 +113,30 @@ def main():
         4. Update Contact
         5. Delete Contact''')
         
+        while True:
+            try:
+                choice = int(input("\nChoose one option given above Press(1-5) and 0 for Exit : "))
+                if choice < 0 or choice > 5:
+                    print("\nPlease enter a number between 1 and 5.\n")
+                    choice = int(input("\nChoose one option given above Press(1-5) and 0 for Exit : "))
+                elif 0<=choice<=5:
+                    break
+            except:
+                print("\nPlease enter a valid integer.")
 
-        choice = input("\nChoose one option given above Press(1-5) and 0 for Exit ")
-
-        if choice == "1":
+        if choice == 1:
             Add_contact()
-        elif choice == "2":
+        elif choice == 2:
             View_contact_list()
-        elif choice == "3":
+        elif choice == 3:
             Search_contact()
-        elif choice == "4":
+        elif choice == 4:
             Update_contact()
-        elif choice == "5":
+        elif choice == 5:
             Delete_contact()
-        elif choice=="0":
+        elif choice==0:
             print("\nExiting....")
             break
-        else:
-            print("Please enter a number between 1 and 6.\n")
-
         input("Press any key to continue...")
         
 

@@ -90,7 +90,7 @@ def main():
     tasks = load_from_file(filename)
 
     while True:
-        print("""\n-----> Task Manager - Perform Operations <-----\n
+        print("""\n-----> Task Manager <-----\n
         1. Add Task
         2. Display Tasks
         3. Mark Task as Complete
@@ -98,27 +98,33 @@ def main():
         5. Update tasks
         6. Save and Quit""")
 
-        choice = input(f"\n {username} Please Choose One operation (1-6) from above: ")
+        while True:
+            try:
+                choice = int(input(f"\n{username} Please Choose one option given above!! Press(1-6) : "))
+                if choice < 1 or choice > 6:
+                    print("\nPlease enter a number between 1 and 6.")
+                elif 1<=choice<=6:
+                    break
+            except:
+                print("\nPlease enter a valid integer.")
 
-        if choice == "1":
+
+        if choice == 1:
             add_task(tasks)
-        elif choice == "2":
+        elif choice == 2:
             display_tasks(tasks)
-        elif choice == "3":
+        elif choice == 3:
             update_task_status(tasks)
-        elif choice == "4":
+        elif choice == 4:
             remove_completed_tasks(tasks)  
-        elif choice=="5":
+        elif choice==5:
             Update_tasks(tasks)
-        elif choice == "6":
+        elif choice == 6:
             save_to_file(tasks, filename)
             print("Tasks saved Successfully.\nExiting ......")
             break
-        else:
-            print("Invalid choice!! Please enter a number between 1 and 5.")
-
         input("Press any key to continue..")
 
 if __name__ == "__main__":
-    print("\n------------->To-Do List<----------------")
+    print("\n-------------> To-Do List <----------------")
     main()

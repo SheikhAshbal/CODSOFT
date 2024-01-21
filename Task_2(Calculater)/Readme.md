@@ -1,24 +1,28 @@
-<h1>Calculator Program</h1>
-<p>This is a simple calculator program that allows users to perform basic arithmetic operations such as addition, multiplication, subtraction, and division.</p>
+# Calculator Program
+<h2>Introduction</h2>
+This is a simple calculator program written in Python that allows users to perform basic arithmetic operations. Users can choose between addition, multiplication, subtraction, and division.
 
-<h3>Instructions:</h3>
-Run the program by executing the main() function.
-Choose an operation by entering the corresponding number (1/2/3/4) based on the menu displayed.
-Follow the prompts to input the required values for the chosen operation.
-View the result of the operation.
-After each calculation, you'll be prompted to continue using the calculator or stop.
-To continue, enter 'Y', and to stop, enter 'N'.
-If 'N' is entered, the program will terminate with a "DONE!!" message.
+<h2>How to Use</h2>
+Run the program.<br>
+The program will display a menu with options for basic arithmetic operations (Addition, Multiplication, Subtraction, Division).<br>
+Enter the corresponding number for the operation you want to perform.<br>
+Follow the on-screen instructions to input the required numbers for the chosen operation.<br>
+View the result.
+<h2>Operations</h2>
+<h5>1. Addition</h5>
+Enter multiple numbers, and the program will calculate their sum.
 
-<h3>Functions:</h3>
-options(): Displays the available arithmetic operations and prompts the user to choose one.
+<h5>2. Multiplication</h5>
+Enter multiple numbers, and the program will calculate their product.
 
-addition(): Performs addition of multiple numbers entered by the user.
+<h5>3. Subtraction</h5>
+Enter two numbers, and the program will calculate the difference.
 
-subtraction(): Performs subtraction of two numbers entered by the user.
+<h5>4. Division</h5>
+Enter two numbers, and the program will calculate the quotient. Note: The program handles division by zero and prompts for a valid denominator.
 
-multiplication(): Performs multiplication of multiple numbers entered by the user.
+<h5>Exiting the Program</h5>
+To exit the program, enter '0' when prompted for the operation number.
 
-division(): Performs division of two numbers entered by the user. Handles division by zero error.
-
-main(): Calls the options() function, performs the selected operation, and displays the result.
+<h4>Note</h4>
+The program includes error handling for invalid inputs and division by zero.
