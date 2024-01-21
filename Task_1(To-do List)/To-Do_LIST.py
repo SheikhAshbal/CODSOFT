@@ -17,47 +17,54 @@ def display_tasks(tasks):
 
 def update_task_status(tasks):
     display_tasks(tasks)
+    if not tasks:
+        print("No tasks available to update.")
+        return
     title = input("Enter the title of the task to mark as complete:").capitalize()
+    task_found = False
+
     for task in tasks:
         if task["title"] == title:
             task["status"] = "Complete"
             print(f"Task '{title}' marked as complete.")
-            return
-    print(f"Task '{title}' not found.")
+            task_found = True
+            break
+    if not task_found:
+        print(f"Task '{title}' not found.")
+    
 def Update_tasks(tasks):
     display_tasks(tasks)
     if not tasks:
         print("No tasks to update.")
         return
-    try:
-        index = int(input("Enter the index of the task to update: ")) - 1
-        if 0 <= index < len(tasks):
-            task = tasks[index]
-            task["title"] = input(f"New Title ({task['title']}): ").capitalize()
-            task["description"] = input(f"New Description ({task['description']}): ").capitalize()
-            task["status"] = input(f"New status ({task['status']}): ").capitalize()
-            print("Task updated successfully!")
-        else:
-            print("Invalid index. Please enter a valid index.")
-    except ValueError:
-        print("Invalid input. Please enter a valid index.")
+    while True:
+        try:
+            index = int(input("Enter the index of the task to update: ")) - 1
+            if 0 <= index < len(tasks):
+                task = tasks[index]
+                task["title"] = input(f"New Title ({task['title']}): ").capitalize()
+                task["description"] = input(f"New Description ({task['description']}): ").capitalize()
+                print("Task updated successfully!")
+                break
+            else:
+                print("Invalid index. Please enter a valid index.")
+        except ValueError:
+            print("Invalid input. Please enter a valid index.")
+        
 
 
 def remove_completed_tasks(tasks):
-    if  tasks:
-        incomplete_tasks = []
-        for task in tasks:
-            if task["status"] == "Incomplete":
-                incomplete_tasks.append(task)
-        tasks.clear()
-        tasks.extend(incomplete_tasks)
-        save_to_file(tasks, filename)
-    
-        print("Completed tasks removed successfully.")
-    else:
+    completed_tasks = []
+    for task in tasks:
+        if task["status"] == "Complete":
+            completed_tasks.append(task)
+    if not completed_tasks:
         print("\nNo completed tasks found.")
-        
-
+        return
+    for completed_task in completed_tasks:
+        tasks.remove(completed_task)
+    save_to_file(tasks, filename)
+    print("Completed tasks removed successfully.")
 
 def save_to_file(tasks, filename):
     with open(filename, 'w') as file:
@@ -77,7 +84,8 @@ def load_from_file(filename):
     return tasks
 
 def main():
-    global filename
+    global filename,username
+    username = input("Enter Your Name:").capitalize()
     filename= "tasks_Task_1 .json"
     tasks = load_from_file(filename)
 
@@ -113,5 +121,4 @@ def main():
 
 if __name__ == "__main__":
     print("\n------------->To-Do List<----------------")
-    username = input("Enter Your Name:").capitalize()
     main()
