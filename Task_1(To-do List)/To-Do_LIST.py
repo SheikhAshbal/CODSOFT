@@ -98,7 +98,7 @@ def main():
         5. Update tasks
         6. Save and Quit""")
 
-        choice = input(f"\n {username} Please Choose One operation (1-5) from above: ")
+        choice = input(f"\n {username} Please Choose One operation (1-6) from above: ")
 
         if choice == "1":
             add_task(tasks)

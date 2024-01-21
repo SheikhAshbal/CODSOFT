@@ -1,39 +1,26 @@
-<h1>To-Do List</h1>
-<h2>Description</h2>
-This is a simple To-Do List application written in Python. Users can add tasks, mark tasks as complete, update task details, and remove completed tasks. The tasks are stored in a JSON file.
+# To-Do List Application
+<h2>Introduction</h>
+This is a simple To-Do List application written in Python that allows users to manage their tasks. Users can perform various operations such as adding tasks, displaying tasks, marking tasks as complete, removing completed tasks, updating task details, and saving their tasks to a file.
 
-<h3>Features</h3>
-Add tasks with titles, descriptions, and default status as "Incomplete."
-Display all tasks with their details.
-Mark tasks as complete.
-Remove completed tasks.
-Update task details.
-Save and Quit
-<h3>Usage</h3>
-Add Task:
+<h2>Usage</h2>
+<h5>Add Task:</h5> Users can add a new task by providing a title and description. By default, the status is set to "Incomplete."
 
-Choose option 1 to add a new task.
-Enter the title and description when prompted.<br>
-Display Tasks:
+<h5>Display Tasks:</h5> Users can view the list of tasks, including their titles, descriptions, and statuses (Incomplete/Complete).
 
-Choose option 2 to display all tasks.<br>
-Mark Task as Complete:
+<h5>Mark Task as Complete:</h5> Users can mark a specific task as complete by entering the task's title.
 
-Choose option 3 to mark a task as complete.
-Enter the title of the task when prompted.<br>
-Remove Completed Tasks:
+<h5>Remove Completed Tasks:</h5> Users can remove all completed tasks from the list.
 
-Choose option 4 to remove completed tasks.<br>
-Update Tasks:
+<h5>Update Tasks:</h5> Users can update the details (title and description) of a specific task by providing the task's index.
 
-Choose option 5 to update the details of a task.
-Enter the index of the task when prompted.<br>
-Save and Quit:
+<h5>Save and Quit:</h5> Users can save their tasks to a file and exit the application.
 
-Choose option 6 to save the tasks to a file and exit the application.
-<h3>Files</h3>
-`tasks_Task_1.json`: JSON file to store tasks.
-<h3>How to Run</h3>
-Ensure you have Python installed on your machine.
-Clone the repository.
-Run the script using the command: `python your_script_name.py`
+<h2>File Operations</h2>
+The tasks are stored in a JSON file named "tasks_Task_1.json."<br>
+Tasks are loaded from the file when the application starts, and changes are saved to the same file before exiting.
+<h2>Instructions</h2>
+Run the program.<br>
+Enter your name when prompted.<br>
+Choose an operation by entering the corresponding number (1-6).<br>
+Follow the on-screen instructions for each operation.<br>
+Save your tasks by choosing option 6 before exiting.<br>
