@@ -39,9 +39,9 @@ def Add_contact():
 def View_contact_list():
     if len(contacts) > 0:
         print("\n\tCONTACT LIST:\n")
-        print("S.NO\t\tName\t\tPhone No:")
+        print("S.NO")
         for i, contact in enumerate(contacts, start=1):
-            print(f"{i}.\t\t{contact['Name']}\t\t{contact['Phone']}")
+            print(f"{i}. \tName:{contact['Name']}\tPhone NO:{contact['Phone']}\n")
     else:
         print("\nNo Contacts Added Yet.\n")
 
